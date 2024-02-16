@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DashYPS - Una experiencia similar a Geometry Dash</title>
+  <title>DashYPS</title>
   <style>
     body {
       margin: 0;
@@ -57,16 +57,15 @@
       max-width: 90%;
     }
     .popup-content {
-      max-height: 80
-      vh;
+      max-height: 80vh;
       overflow-y: auto;
     }
     .ad-container {
       display: none;
     }
     footer {
-      background-color: #222;
-      color: #fff;
+      background-color: #3498db;
+      color: #3498db;
       padding: 20px;
     }
     footer a {
@@ -78,12 +77,12 @@
 </head>
 <body>
   <div class="container">
-    <img src="ruta-a-imagen-titulo.jpg" alt="Título" class="title-img">
-    <img src="ruta-a-imagen-subtitulo.jpg" alt="Subtítulo" class="subtitle-img">
+    <img src="title.png" alt="Título" class="title-img">
+    <img src="mini.png" alt="Subtítulo" class="subtitle-img">
     <div class="content-box">
-      <h2>      <p>DashYPS brinda una experiencia similar a Geometry Dash con toques personales del administrador y programador del servidor, con nuevas posibilidades de obtener recompensas y títulos significativos para llegar más alto.</p></h2>
-
-    </div>
+      <h2><p>DashYPS brinda una experiencia similar a Geometry Dash con toques personales del administrador y programador del servidor, con nuevas posibilidades de obtener recompensas y títulos significativos para llegar más alto.</p>
+    </h2>
+   </div>
     <a href="ruta-a-archivo-android" class="button">Android</a>
     <a href="ruta-a-archivo-windows" class="button">Windows</a>
     <a href="#" class="button button-gray" onclick="openPopup()">iOS</a>
@@ -94,17 +93,17 @@
     <a href="#" class="button" onclick="openExtrasPopup()">Extras</a>
     <div id="extras-popup" class="popup" style="display: none;">
       <div class="popup-content">
-        <h2>Introducción a Geometry Dash</h2>
-        <p>Geometry Dash es un juego de plataformas rítmico desarrollado por RobTop Games, lanzado inicialmente en 2013. En el juego, los jugadores controlan un icono y navegan a través de niveles desafiantes mientras escuchan música electrónica.</p>
+        <h2><p>Geometry Dash es un juego de plataformas rítmico desarrollado por RobTop Games, lanzado inicialmente en 2013. En el juego, los jugadores controlan un icono y navegan a través de niveles desafiantes mientras escuchan música electrónica.</p>
         <p>Queremos agradecer a RobTop Games por crear un juego tan inspirador y desafiante que ha sido una fuente de entretenimiento y creatividad para millones de jugadores en todo el mundo.</p>
-        <button onclick="closeExtrasPopup()">Cerrar</button>
+        </h2>
+          <button onclick="closeExtrasPopup()">Cerrar</button>
       </div>
     </div>
   </div>
   <footer>
-    <a href="url-terminos-de-uso">Términos de Uso</a>
-    <a href="url-creditos">Créditos</a>
-    <a href="url-agradecimientos">Agradecimientos</a>
+    <a href="terms.html">Términos de Uso</a>
+    <a href="credits.html">Créditos</a>
+    <a href="thanks.html">Agradecimientos</a>
   </footer>
 
   <script>
@@ -124,7 +123,7 @@
       document.getElementById('extras-popup').style.display = 'none';
     }
     
-    // Ocultar anuncios inusuales
+   
     window.onload = function() {
       var adContainers = document.getElementsByClassName('ad-container');
       for (var i = 0; i < adContainers.length; i++) {
