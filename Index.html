@@ -57,22 +57,33 @@
       max-width: 90%;
     }
     .popup-content {
-      max-height: 80vh;
+      max-height: 80
+      vh;
       overflow-y: auto;
     }
     .ad-container {
       display: none;
     }
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="title.png" alt="Título" class="title-img">
-    <img src="mini.png" alt="Subtítulo" class="subtitle-img">
+    <img src="ruta-a-imagen-titulo.jpg" alt="Título" class="title-img">
+    <img src="ruta-a-imagen-subtitulo.jpg" alt="Subtítulo" class="subtitle-img">
     <div class="content-box">
       <h2>Introducción a DashYPS</h2>
-    </div>
       <p>DashYPS brinda una experiencia similar a Geometry Dash con toques personales del administrador y programador del servidor, con nuevas posibilidades de obtener recompensas y títulos significativos para llegar más alto.</p>
+    </div>
     <a href="ruta-a-archivo-android" class="button">Android</a>
     <a href="ruta-a-archivo-windows" class="button">Windows</a>
     <a href="#" class="button button-gray" onclick="openPopup()">iOS</a>
@@ -90,6 +101,11 @@
       </div>
     </div>
   </div>
+  <footer>
+    <a href="url-terminos-de-uso">Términos de Uso</a>
+    <a href="url-creditos">Créditos</a>
+    <a href="url-agradecimientos">Agradecimientos</a>
+  </footer>
 
   <script>
     function openPopup() {
