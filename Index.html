@@ -1,136 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DashYPS</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #3498db;
-      color: #fff;
-    }
-    .container {
-      text-align: center;
-      padding: 20px;
-    }
-    .title-img {
-      width: 100%;
-    }
-    .subtitle-img {
-      width: 50%;
-      margin: 10px auto;
-    }
-    .content-box {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px auto;
-      max-width: 80%;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border-radius: 10px;
-      text-decoration: none;
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      margin: 10px;
-    }
-    .button-gray {
-      background-color: #999;
-    }
-    .popup {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      border-radius: 10px;
-      color: white;
-      z-index: 999;
-      max-width: 90%;
-    }
-    .popup-content {
-      max-height: 80vh;
-      overflow-y: auto;
-    }
-    .ad-container {
-      display: none;
-    }
-    footer {
-      background-color: #3498db;
-      color: #3498db;
-      padding: 20px;
-    }
-    footer a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashYPS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-img {
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <img src="title.png" alt="Título" class="title-img">
-    <img src="mini.png" alt="Subtítulo" class="subtitle-img">
-    <div class="content-box">
-      <h4><p>DashYPS brinda una experiencia similar a Geometry Dash con toques personales del administrador y programador del servidor, con nuevas posibilidades de obtener recompensas y títulos significativos para llegar más alto.</p>
-    </h4>
-   </div>
-    <a href="ruta-a-archivo-android" class="button">Android</a>
-    <a href="ruta-a-archivo-windows" class="button">Windows</a>
-    <a href="ruta-a-archivo-lite" class="button"> Android Lite</a>
-    <a href="#" class="button button-gray" onclick="openPopup()">iOS</a>
-    <div id="popup" class="popup" style="display: none;">
-      <p>Disponible próximamente</p>
-      <button onclick="closePopup()">Cerrar</button>
-    </div>
-    <a href="#" class="button" onclick="openExtrasPopup()">Extras</a>
-    <div id="extras-popup" class="popup" style="display: none;">
-      <div class="popup-content">
-        <h4><p>Geometry Dash es un juego de plataformas rítmico desarrollado por RobTop Games, lanzado inicialmente en 2013. En el juego, los jugadores controlan un icono y navegan a través de niveles desafiantes mientras escuchan música electrónica.</p>
-        <p>Queremos agradecer a RobTop Games por crear un juego tan inspirador y desafiante que ha sido una fuente de entretenimiento y creatividad para millones de jugadores en todo el mundo.</p>
-        </h4>
-          <button onclick="closeExtrasPopup()">Cerrar</button>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <a href="terms.html">Términos de Uso</a>
-    <a href="credits.html">Créditos</a>
-    <a href="thanks.html">Agradecimientos</a>
-  </footer>
-
-  <script>
-    function openPopup() {
-      document.getElementById('popup').style.display = 'block';
-    }
-
-    function closePopup() {
-      document.getElementById('popup').style.display = 'none';
-    }
-
-    function openExtrasPopup() {
-      document.getElementById('extras-popup').style.display = 'block';
-    }
-
-    function closeExtrasPopup() {
-      document.getElementById('extras-popup').style.display = 'none';
-    }
-    
-   
-    window.onload = function() {
-      var adContainers = document.getElementsByClassName('ad-container');
-      for (var i = 0; i < adContainers.length; i++) {
-        adContainers[i].style.display = 'none';
-      }
-    };
-  </script>
+    <img src="title.png" alt="Título" class="header-img">
+    <img src="gdlegendscomingsoon.jpg" alt="Imagen completa">
 </body>
+
 </html>
